@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #e9ecef; /* Add a subtle background color to the body */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Change heading color for better contrast */
+}
+
+form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px; /* Increased padding for better usability */
+    width: 100%;
+    border: 1px solid #ccc; /* Add a border for better definition */
+    border-radius: 4px; /* Rounded corners for inputs */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+form input:focus {
+    border-color: #28a745; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button[type="button"] {
+    background-color: #ffc107;
+}
+
+button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0; /* Only vertical margin for spacing */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Rounded corners for list items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+li:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for depth */
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 4px; /* Rounded corners for delete button */
+}
+
+button.delete-btn:hover {
+    background-color: #c82333; /* Darker red on hover for delete button */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+
+    form input, button {
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+
+    li {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
